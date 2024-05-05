@@ -23,4 +23,51 @@ DB_PASSWORD = your mongodb atlas password or you can change the entire url to lo
 
 To start the server, run the following command: node index.js
 
-Video Demonstration For a detailed demonstration of the project, including folder structure explanation and app usage with crome browser, please refer to the following video:https://www.youtube.com/watch?v=2SyoiI9X9Qw
+API Endpoints:
+
+User Routes:
+POST /signup: Create a new user account.
+POST /signin: Sign in with existing user credentials.
+GET /signout: Sign out the current user.
+GET /home: Home page route (requires authentication).
+
+
+Post Routes:
+POST /create: Create a new post.
+GET /get: Get posts created by the authenticated user.
+GET /getall: Get all posts.
+PUT /update/:id: Update a post by its ID.
+DELETE /delete/:id: Delete a post by its ID.
+GET /postsbylocation: Get posts based on latitude and longitude.
+GET /count: Get counts of active and inactive posts.
+
+
+Middleware:
+jwtAuth: Middleware for JWT authentication. Used to protect routes that require authentication.
+
+
+Controllers:
+UserController: Manages user-related operations (signup, signin, signout).
+PostController: Manages post-related operations (create, read, update, delete, count, posts by location).
+
+
+Models:
+UserModel: Represents the schema for user data.
+PostModel: Represents the schema for post data.
+
+
+Repositories:
+UserRepository: Handles database operations related to users.
+PostRepository: Handles database operations related to posts.
+
+
+Dependencies:
+bcrypt: Used for hashing passwords.
+jsonwebtoken: Used for generating and verifying JSON Web Tokens (JWT).
+express: Web framework for Node.js.
+mongoose: MongoDB object modeling tool.
+dotenv: Loads environment variables from a .env file.
+
+
+Author:
+Pratik more
