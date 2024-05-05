@@ -1,6 +1,6 @@
-Authentication App
+node js api for user to signup and signin
+and for post to perform crud operation on post 
 
-This is the repository for the Authentication App designed for A complete authentication system which can be used as a starter code for creating any new application. The App is built using Node.js and MongoDB.
 
 Project Structure
 
@@ -14,10 +14,8 @@ Navigate to the project directory Install dependencies using npm install
 
 Create a .env file in the root directory and configure the following environment variables:
 SECRET,
-CLIENT_ID,
-CLIENT_SECRET,
-CB_URL,
-DB_PASSWORD.
+DB_PASSWORD,
+JWT.
 
 makefile Copy code PORT=4000
 
